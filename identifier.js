@@ -1,4 +1,3 @@
-let _counter = 0;
 
 class Identifier {
     
@@ -14,7 +13,7 @@ class Identifier {
     }
 
     static increment() {
-        let count = this._counter;
+        if(!this._counter) this._counter = 0;
         this._counter = this._counter + 1;
         return this._counter;
     }
